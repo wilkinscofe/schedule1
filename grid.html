@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>schedule</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <button
+      id="clearItems"
+      class="button"
+      type="button"
+      title="clear list"
+      onClick="window.clear()"
+    >
+      Clear
+    </button>
+    <button
+      id="additem"
+      class="button2"
+      title="add new item"
+      type="button"
+      onClick="window.create1ClassInput()"
+      tabindex="0"
+    >
+      +
+    </button>
+
+    <button
+      id="editbutton"
+      class="edit"
+      title="edit all classes"
+      type="button"
+      onClick="window.edit()"
+    >
+      edit
+    </button>
+    <button
+      id="saveButton"
+      class="save"
+      title="save inputs"
+      type="button"
+      onClick="window.save()"
+    >
+      save
+    </button>
+    <button
+      id="cancelButton"
+      class="cancel"
+      title="cancel unsaved inputs"
+      type="button"
+    >
+      cancel
+    </button>
+    <h1>School Schedule</h1>
+    <table>
+      <thead>
+        <tr>
+          <th><div class="day">Monday</div></th>
+          <th><div class="day">Tuesday</div></th>
+          <th><div class="day">Wednesday</div></th>
+          <th><div class="day">Thursday</div></th>
+          <th><div class="day">Friday</div></th>
+        </tr>
+      </thead>
+      <tbody id="container">
+        <!-- <form id="myForm">
+          <input
+            type="text"
+            id="input1"
+            name="input1"
+            value="existing value 1"
+          />
+          <input
+            type="text"
+            id="input2"
+            name="input2"
+            value="existing value 2"
+          />
+          <input
+            type="text"
+            id="input3"
+            name="input3"
+            value="existing value 3"
+          />
+          <input
+            type="text"
+            id="input4"
+            name="input4"
+            value="existing value 4"
+          /> -->
+        <!-- <button type="button" onclick="getData()">Submit</button>
+        </form> -->
+      </tbody>
+    </table>
+  </body>
+</html>
