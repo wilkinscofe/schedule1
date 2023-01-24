@@ -8,10 +8,7 @@ let schedule = [];
 
 function loadSchedule() {
   const retrievedArray = JSON.parse(localStorage.getItem("storedSchedule"));
-  if (retrievedArray.length > 0) {
-    schedule = [...retrievedArray];
-    // return schedule;
-  } else {
+  if (!retrievedArray) {
     schedule = [
       "English",
       "Math",
@@ -24,6 +21,10 @@ function loadSchedule() {
       "DVC",
       "English",
     ];
+
+    // return schedule;
+  } else {
+    schedule = [...retrievedArray];
     // return schedule;
   }
 }
