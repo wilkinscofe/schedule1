@@ -119,12 +119,13 @@ tr:nth-child(even) td {
 }
 
 button.button {
-  font-size: 15px;
+  font-size: 17px;
   background-color: rgb(251, 92, 92);
-  padding: 10px;
+  color: #f1e3e3;
+  padding: 9px;
   border-radius: 10px;
   margin-bottom: 0.5rem;
-  width: 100px;
+  width: 80px;
   position: sticky;
   margin: 5px;
   left: 0;
@@ -133,6 +134,7 @@ button.button {
 button.button2 {
   font-size: 1rem;
   background-color: rgb(64, 221, 116);
+  color: #ffffff;
   padding: 0.75rem;
   margin: 20px;
   border-radius: 10px;
