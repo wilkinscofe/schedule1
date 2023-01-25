@@ -146,4 +146,50 @@ button.button2 {
   #grid-row {
     grid-template-columns: 100%;
   }
+  table {
+    display: grid;
+    border-collapse: separate;
+    padding: 0;
+    grid-template-columns:
+      minmax(50px, 1fr)
+      minmax(50px, 1fr)
+      minmax(50px, 1fr)
+      minmax(50px, 1fr)
+      minmax(50px, 1fr);
+  }
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+    width: auto;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background: #6c7ae0;
+    font-weight: normal;
+    font-size: medium;
+    color: white;
+  }
+
+  th:last-child {
+    border: 0;
+  }
+
+  td {
+    color: #808080;
+    height: 40px;
+    width: auto;
+    font-size: medium;
+  }
 }
